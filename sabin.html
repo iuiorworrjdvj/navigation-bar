@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>*{
+        float: left;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    
+    }
+    
+    li{
+        margin: 5px;
+        padding: auto;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{display:inline-block;background-color: orange;
+    }
+    .child{position: relative;}
+    div a{
+        color:black;
+        margin-top: 20px;
+    width: 4cm;
+        right: -10px;
+    
+        text-align: center;   
+        background-color: white; 
+    }
+    
+    div {
+        display: none;
+        position:absolute;
+        color:black;
+        margin-top: 20px;
+        
+        z-index: 1;
+        right: -10px;
+        border: solid;
+        text-align: center;   
+        background-color: white; 
+        
+    }
+    div a:hover{
+        background-color: red;
+    }
+    body{
+        background-color: black;
+    }
+    li:hover{
+        background-color: rgba(255, 64, 0, 0.532);
+        opacity: 0.8;
+    }
+    .child:hover .sabin {
+        display: block;
+        z-index: 1;
+      }</style>
+</head><link rel="stylesheet" href="sabin.css">
+<body>
+    <ul>
+        <li><a href="" style="background-color: rgba(255, 0, 0, 0.555);">Home</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">JAVA</a></li>
+        <li class="child"><a href="">JAVASCRIPT </a>
+            <div class="sabin">
+                <a  href="">Link 1</a><br>
+                <a href="">Link 2</a><br>
+                <a href="">Link 3</a><br>
+            </div>
+            </li>
+        
+    </ul>
+    
+</body>
+</html>
